@@ -31,3 +31,4 @@ config.js
 #DS_Store files
 .DS_Store
 
+/.idea/

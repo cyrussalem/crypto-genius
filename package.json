@@ -6,6 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "async": "^2.6.0",
     "ejs": "~0.8.5",
     "express": "~4.2.0",
     "qs": "*",

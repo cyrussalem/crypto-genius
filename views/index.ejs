@@ -25,276 +25,181 @@
     <h3>Bitcoin Exchange Prices</h3>
 
     <div class="row">
-        <div class="col-md-3">
+        <div ng-repeat="exchange in exchangePrices" class="col-md-6">
 
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <div class="row">
                         <div class="col-xs-5">
-                            <h2>Luno</h2>
+                            <h3>{{exchange.name}}</h3>
                         </div>
                         <div class="col-xs-7 text-right">
-                            <h3>R400000</h3>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer announcement-bottom">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                View
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                <i class="fa fa-arrow-circle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-        <div class="col-md-3">
-
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <h2>Lykke</h2>
-                        </div>
-                        <div class="col-xs-7 text-right">
-                            <h3>R32000</h3>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer announcement-bottom">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                View
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                <i class="fa fa-arrow-circle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-        <div class="col-md-3">
-
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <h2>CEX</h2>
-                        </div>
-                        <div class="col-xs-7 text-right">
-                            <h3>R410000</h3>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer announcement-bottom">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                View
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                <i class="fa fa-arrow-circle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-        <div class="col-md-3">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <h2>Bitstamp</h2>
-                        </div>
-                        <div class="col-xs-7 text-right">
-                            <h3>R410000</h3>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer announcement-bottom">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                View
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                <i class="fa fa-arrow-circle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-    </div>
-    <h3>Your Luno Profile</h3>
-
-    <div class="col-md-5">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="form-group">
-                    <label class="control-label" for="disabledInput">Luno API Key</label>
-                    <input class="form-control" id="LunoApiKey" placeholder="API key here" type="password">
-                </div>
-            </div>
-            <div class="col-md-5">
-                <button class="btn btn-primary pull-right" style="margin-top: 25px;">Connect</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-7">
-                                <h5>Rand Wallet</h5>
-                            </div>
-                            <div class="col-xs-5 text-right">
-                                <h5>R 10000</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <div class="panel-footer announcement-bottom">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <button class="btn btn-sm btn-primary text-center">
-                                        Force Buy BTC
-                                    </button>
-                                </div>
-                                <div class="col-md-5">
-                                    <button class="btn btn-sm btn-danger text-center pull-right">
-                                        Stop
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-7">
-                                <h5>BTC Wallet</h5>
-                            </div>
-                            <div class="col-xs-5 text-right">
-                                <h5>0.1 BTC</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <div class="panel-footer announcement-bottom">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <button class="btn btn-sm  btn-primary text-center">
-                                        Force Sell BTC
-                                    </button>
-                                </div>
-                                <div class="col-md-5">
-                                    <button class="btn btn-sm btn-danger text-center pull-right">
-                                        Stop
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-7">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Predictions Panel</div>
-                    <div class="panel-body" style="max-height: 300px;overflow-y: scroll;">
-                        <div class="notice notice-sm notice-success">
-                            Big drop now done. Time to buy!
-                        </div>
-                        <div class="notice notice-sm notice-info">
-                            Just hoddle them coins yo!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                        <div class="notice notice-sm notice-danger">
-                            Peak reached. Time to sell!
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">System logs</div>
-                    <div class="panel-body" style="max-height: 300px;overflow-y: scroll;">
-                        <div class="notice notice-sm notice-success">
-                            Placing sell order for R150 000 per BTC
-                        </div>
-                        <div class="notice notice-sm notice-info">
-                            Checking order book...
-                        </div>
-                        <div class="notice notice-sm notice-info">
-                            Placing sell order for R149 000 per BTC
-                        </div>
-                        <div class="notice notice-sm notice-info">
-                            Checking order book...
-                        </div>
-                        <div class="notice notice-sm notice-info">
-                            Keeping sell order as is. waiting for it to go through...
-                        </div>
-                        <div class="notice notice-sm notice-success">
-                            All btc sold!
+                            <h3>{{exchange.unit + " " + exchange.price}}</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<h3>Your Luno Profile</h3>
+
+<div class="col-md-5">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="form-group">
+                <label class="control-label" for="disabledInput">Luno API Key</label>
+                <input class="form-control" id="LunoApiKey" placeholder="API key here" type="password">
+            </div>
+        </div>
+        <div class="col-md-5">
+            <button class="btn btn-primary pull-right" style="margin-top: 25px;">Connect</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h5>Rand Wallet</h5>
+                        </div>
+                        <div class="col-xs-5 text-right">
+                            <h5>R 10000</h5>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="panel-footer announcement-bottom">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <button class="btn btn-sm btn-primary text-center">
+                                    Force Buy BTC
+                                </button>
+                            </div>
+                            <div class="col-md-5">
+                                <button class="btn btn-sm btn-danger text-center pull-right">
+                                    Stop
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h5>BTC Wallet</h5>
+                        </div>
+                        <div class="col-xs-5 text-right">
+                            <h5>0.1 BTC</h5>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="panel-footer announcement-bottom">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <button class="btn btn-sm  btn-primary text-center">
+                                    Force Sell BTC
+                                </button>
+                            </div>
+                            <div class="col-md-5">
+                                <button class="btn btn-sm btn-danger text-center pull-right">
+                                    Stop
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-7">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Predictions Panel</div>
+                <div class="panel-body" style="max-height: 300px;overflow-y: scroll;">
+                    <div class="notice notice-sm notice-success">
+                        Big drop now done. Time to buy!
+                    </div>
+                    <div class="notice notice-sm notice-info">
+                        Just hoddle them coins yo!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                    <div class="notice notice-sm notice-danger">
+                        Peak reached. Time to sell!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">System logs</div>
+                <div class="panel-body" style="max-height: 300px;overflow-y: scroll;">
+                    <div class="notice notice-sm notice-success">
+                        Placing sell order for R150 000 per BTC
+                    </div>
+                    <div class="notice notice-sm notice-info">
+                        Checking order book...
+                    </div>
+                    <div class="notice notice-sm notice-info">
+                        Placing sell order for R149 000 per BTC
+                    </div>
+                    <div class="notice notice-sm notice-info">
+                        Checking order book...
+                    </div>
+                    <div class="notice notice-sm notice-info">
+                        Keeping sell order as is. waiting for it to go through...
+                    </div>
+                    <div class="notice notice-sm notice-success">
+                        All btc sold!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 </body>
