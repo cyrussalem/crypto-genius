@@ -3,6 +3,7 @@ var router = express.Router();
 var Twit = require('twit');
 var config = require('../config');
 var exchangeManager = require('../lib/exchange-manager.js');
+var lunoManager = require('../lib/luno-manager.js');
 
 // instantiate Twit module
 var twitter = new Twit(config.twitter);
